@@ -43,7 +43,7 @@ h4 {
     color: #333;
 }
 #header {
-    background: white url(../images/head_img.jpg) no-repeat 55%;
+    background: white url(../images/head_img.jpg) no-repeat 75%;
     background-size: contain;
     padding: 4px 8px 10px 6px;
     height: auto;
@@ -54,10 +54,13 @@ h4 {
 #header > h1 {
     background: url(../images/logo.png) no-repeat 10px 5px;
     padding: 8px 80px;
-    color: #393939;
+    font-size: 220%;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.3),
+                 0px -5px 16px rgba(255,255,255,0.3);
 }
 #main {
-    background: transparent;
+    background: #FDFDFD url(../images/clover.jpg) right bottom no-repeat;
     margin: 15px 15px 0px 15px;
     background-color: white;
 }
@@ -86,6 +89,7 @@ h4 {
 #top-menu a:hover {
     color: #254e75;
     text-decoration: none;
+    border-bottom:medium solid;
 }
 div.flash {
     border: 1px solid;
@@ -242,7 +246,6 @@ div#welcome-store-content h4 {
 }
 #content,
 #main.nosidebar #content {
-    background: #FDFDFD url(../images/yotuba.jpg) right bottom no-repeat;
     border: 1px solid #ddd;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
@@ -347,29 +350,74 @@ h4 {
     height: 20px;
     line-height: 20px;
 }
-#main-menu ul li a.selected {
-    color: #000;
-    border-bottom: 2px solid #393939 !important;
-    background-color: #ebebeb;
-    background-image: -webkit-linear-gradient(#fcfcfc, #ebebeb);
-    background-image: linear-gradient(#fcfcfc, #ebebeb);
-    background-repeat: repeat-x;
-}
-#main-menu ul li a.selected:hover {
-    color: #000;
-}
 #main-menu ul li a:hover {
-    color: #254e75;
-    border-bottom: 2px solid #CFDCE8;
-    background-color: #dce6ef;
-    background-image: -webkit-linear-gradient(#fafbfd, #dce6ef);
-    background-image: linear-gradient(#fafbfd, #dce6ef);
-    background-repeat: repeat-x;
-    text-decoration: underline;
+    color: #0000CC;
+}
+#main-menu ul li a.selected {
+  font-weight: 600;
+  font-style: italic; 
+  color:black;
+  border-bottom:medium solid;
+  background-color: red;
+}
+div#main-menu li a.products {
+  background: #F4786A !important;
+  text-shadow: none;
+}
+#main-menu li a.overview, #main-menu li a.overview:hover {
+  margin-left:5px;
+  padding-left: 20px;
+  background: url(../images/overview.png) no-repeat left;
+}
+#main-menu li a.issues, #main-menu li a.issues:hover {
+  padding-left: 20px;
+  background: url(../images/ticket.png) no-repeat left;
+}
+#main-menu li a.new-issue, #main-menu li a.new-issue:hover {
+  padding-left: 20px;
+  background: url(../images/sis.png) no-repeat left;
+}
+
+#main-menu li a.activity, #main-menu li a.activity:hover {
+  padding-left: 20px;
+  background: url(../images/activities.png) no-repeat left;
+}
+#main-menu li a.gantt, #main-menu li a.gantt:hover {
+  padding-left: 20px;
+  background: url(../images/gantt.png)  no-repeat left;
+}
+
+#main-menu li a.calendar, #main-menu li a.calendar:hover {
+  padding-left: 20px;
+  background: url(../images/calendar.png)  no-repeat left;
+}
+
+#main-menu li a.news, #main-menu li a.news:hover {
+  padding-left: 20px;
+  background: url(../images/news.png)  no-repeat left;
+}
+
+#main-menu li a.documents, #main-menu li a.documents:hover {
+  padding-left: 20px;
+  background: url(../images/doc.png)  no-repeat left;
+}
+
+#main-menu li a.wiki, #main-menu li a.wiki:hover {
+  padding-left: 20px;
+  background: url(../images/wiki.png)  no-repeat left;
+}
+#main-menu li a.files, #main-menu li a.files:hover {
+  padding-left: 20px;
+  background: url(../images/file.png) no-repeat left;
+}
+
+#main-menu li a.settings, #main-menu li a.settings:hover {
+  padding-left: 20px;
+  background: url(../images/set.png) no-repeat left;
 }
 table.list tbody td,
 table.list tbody tr:hover td {
-    border: solid 1px #ddd;
+
 }
 table.list thead th {
     border-width: 1px;
@@ -1051,14 +1099,7 @@ span.invoice-status.paid {
     margin-top: -6px;
     padding: 6px;
 }
-div#main-menu li a.products {
-    background: #F4786A !important;
-    text-shadow: none;
-}
-div#main-menu li a.products.selected {
-    background-color: #E5E3DE !important;
-    color: #222;
-}
+
 a.buy-button.blue {
     background: #4C728A !important;
     background-image: -webkit-linear-gradient(bottom, #4c728a 0%, #749bb4 100%) !important;
