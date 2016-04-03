@@ -1,7 +1,7 @@
 Redmine gitmike(soleado) theme
 ==============
 
-![screenshot1](.\images\pageShot.png)
+![screenshot1](./images/pageShot.png)
 
 # Install
 
@@ -19,8 +19,8 @@ git clone https://github.com/cocoassari0914/soleado.git
 redmineの管理ユーザーで行う。  
  管理メニューの設定を開く。　    
 
-![screenshot1](.\images\pageShot2.png)
+![screenshot1](./images/pageShot2.png)
 
 テーマのタブで切り替える。
 
-![screenshot1](.\images\pageShot3.png)
+![screenshot1](./images/pageShot3.png)
